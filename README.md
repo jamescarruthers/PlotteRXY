@@ -1,5 +1,5 @@
 # PlotterXY
-A machine deisgned as your second plotter after an AxiDraw or vintage plotter.
+A machine designed to be your second plotter after an AxiDraw or vintage plotter.
 
 # Why?
 I really enjoyed the flexibility of my AxiDraw, and the speed of my Roland DPX-2200. I wanted something of a halfway house, with the pen flexibility of the AxiDraw and the speed and size of the Roland.
