@@ -1,7 +1,7 @@
 # Hardware build guide
 
 1. Print out a corner pulley mount and check that it fits snuggly into your v-slot extrusion. If it doesn't you might need to recalibrate your printer.
-2. Print out all the parts.
+2. Print out all the parts. The number at the end of the filename is the quantity you'll need — so Pulley_2.3mf means you need 2.
 3. Build up the gantry and slide it on to the y-axis.
 4. Build up the y-axis carrier mounts and attach them to the y-axis extrusion. Keep the screws that hold it to the y-axis loose for now.
 5. Install the servo mounts to the extusions so you have an open sided C shape. Note the orientation of the serve mounts, they are opposite ways up.
