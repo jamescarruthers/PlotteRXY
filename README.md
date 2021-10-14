@@ -14,9 +14,11 @@ The toolchain is fairly simple; SVG ingested in to VPYPE and it's G-code plugin.
 
 # How?
 
-The build is fairly simple, you'll need access to a 3D printer to print off the various parts. Most of the parts are symetrical, so it's a fairly simple list of parts. 
+The build is fairly simple, you'll need access to a 3D printer to print off the various parts. Most of the parts are symetrical, so it's a fairly simple list of parts.
 
 The rest of the parts you'll need are here; https://docs.google.com/spreadsheets/d/1bjWigQsAcE3DGmHS4qicfL3H79G1RvEPnRx3VYNnScU/
+
+There is a build guide in the hardware folder.
 
 # Improvements
 
