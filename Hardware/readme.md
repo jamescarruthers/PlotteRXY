@@ -1,3 +1,5 @@
+Only print one Y-axis folder - depending on what extrusion profile you are using for your y-axis.
+
 # Hardware build guide
 
 1. Print out a corner pulley mount and check that it fits snuggly into your v-slot extrusion. If it doesn't you might need to recalibrate your printer.
