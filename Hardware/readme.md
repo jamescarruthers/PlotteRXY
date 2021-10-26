@@ -1,4 +1,4 @@
-(./diagram.ping)
+(./diagram.png)
 
 Only print one Y-axis folder - depending on what extrusion profile you are using for your y-axis.
 
