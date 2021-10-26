@@ -1,3 +1,5 @@
+(./diagram.ping)
+
 Only print one Y-axis folder - depending on what extrusion profile you are using for your y-axis.
 
 # Hardware build guide
