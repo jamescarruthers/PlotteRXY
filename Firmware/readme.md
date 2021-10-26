@@ -7,3 +7,5 @@ PlotterXY uses Grbl_ESP32: https://github.com/bdring/Grbl_Esp32
 You will need to adjust the DEFAULT_X_MAX_TRAVEL and DEFAULT_Y_MAX_TRAVEL to reflect the size of your plotter. It's safer to do this after the firmware is compiled and uploaded, and you can use the jog function to move the gantry in to the 0,0 position.
 
 Be sure to put jumpers on the XDIAG-EN and YDIAG-EN pins.
+
+Before switching on the first time, move the gantry in to the centre of the work area. Turn on and connect to the web UI. Click on the clear alarm button. Use the jog function to check that the gantry moves in the right direction. If it doesn't, then adjust the stepper motor direction in config.
