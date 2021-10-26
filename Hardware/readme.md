@@ -11,7 +11,7 @@ Only print one Y-axis folder - depending on what extrusion profile you are using
 6. Install the end caps and servo mounts to the extusions so you have an open sided C shape. Note the orientation of the servo mounts, they are opposite ways up with the flat part in the middle of the extrusion.
 7. Slide the whole y-axis assembly on to the extrusion.
 8. Install the pulley mounts, end caps and attach the final extrusion to close the frame.
-9. Adjust all the mount screws until the frame is square. The y-axis should slide left to right freely. Tighten the screws that hold the y-axis in place.
+9. Adjust all the mount screws until the frame is square. Adjust the eccentric nuts. The y-axis should slide left to right freely. Tighten the screws that hold the y-axis in place.
 10. Install all the pulleys. They pulleys should sit on a single shim spacer, with two shims in between the two bearings.
 11. Install the servos in to the servo mounts, being sure to vertically align the toothed pulley with the pulleys on the mount.
 12. Install belts and attach to gantry. They should not be tight at this stage — but should not droop.
