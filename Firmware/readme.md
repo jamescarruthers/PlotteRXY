@@ -1,6 +1,6 @@
 PlotterXY uses Grbl_ESP32: https://github.com/bdring/Grbl_Esp32
 
-1. Download Grbl_ESP32. Folloow the instructions.
+1. Download Grbl_ESP32. Follow the instructions.
 2. Copy the PlotterXY_E4.h file to the machines folder.
 3. Compile and upload to the FYSETC E4 board. (remember that the board needs power!)
 
