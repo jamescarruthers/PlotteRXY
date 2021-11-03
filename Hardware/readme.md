@@ -14,8 +14,8 @@ Only print one Y-axis folder - depending on what extrusion profile you are using
 9. Adjust all the mount screws until the frame is square. Adjust the eccentric nuts. The y-axis should slide left to right freely. Tighten the screws that hold the y-axis in place.
 10. Install all the pulleys. They pulleys should sit on a single shim spacer, with two shims in between the two bearings.
 11. Install the servos in to the servo mounts, being sure to vertically align the toothed pulley with the pulleys on the mount.
-12. Install belts and attach to gantry. They should not be tight at this stage — but should not droop.
-13. Install belt tensioners and tension the belts to the same frequency. It is vital that the belts are the same tension, if they are not at the same tension then the y-axis will be at an angle. Move the y-axis against the corner pulley mounts and adjust until both y-axis gantries rest against their respective corner pulley mounts. If the tension is different you will see that one y-axis gantry is further away from the corner pulley mount than the other.
+12. Install belts and attach to gantry. They should not be tight at this stage — but should not droop. Leave at least 80mm of extra belt on the back side of the z-axis gantry.
+13. Install belt tensioners and set them to loose. Tension the belts to the same tension. It is vital that the belts are the same tension, if they are not at the same tension then the y-axis will be at an angle. Move the y-axis against the corner pulley mounts and adjust until both y-axis gantries rest against their respective corner pulley mounts. If the tension is different you will see that one y-axis gantry is further away from the corner pulley mount than the other. Once you have manually tension the belts so that the y-axis gantries are less than a few mm away from the corner pulley mounts use the belt tensioners to fine tune.
 14. Build up pen lift and install on to gantry. Attach the solenoid to the heater output on the controller board.
 15. Install limit switches and wire to TB and TE connector on board.
 
