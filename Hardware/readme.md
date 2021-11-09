@@ -7,7 +7,7 @@ Only print one Y-axis folder - depending on what extrusion profile you are using
 1. Print out a corner pulley mount and check that it fits snuggly into your v-slot extrusion. If it doesn't you might need to recalibrate your printer.
 2. Print out all the parts. The number at the end of the filename is the quantity you'll need — so Pulley_2.3mf means you need 2.
 3. Build up the z-axis gantry and slide it on to the y-axis.
-5. Build up the y-axis carriages and attach them to the y-axis extrusion. Keep the screws that hold it to the y-axis loose for now.
+5. Build up the y-axis carriages and attach them to the y-axis extrusion. All pulleys sit on a single shim and have two shims between the F605 bearings. Keep the screws that hold it to the y-axis loose for now.
 6. Install the end caps and servo mounts to the extusions so you have an open sided C shape. Note the orientation of the servo mounts, they are opposite ways up with the flat part in the middle of the extrusion.
 7. Slide the whole y-axis assembly on to the extrusion.
 8. Install the pulley mounts, end caps and attach the final extrusion to close the frame.
