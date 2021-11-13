@@ -19,7 +19,3 @@ The build is fairly simple, you'll need access to a 3D printer to print off the 
 The rest of the parts you'll need are here; https://docs.google.com/spreadsheets/d/1bjWigQsAcE3DGmHS4qicfL3H79G1RvEPnRx3VYNnScU/
 
 There is a build guide in the hardware folder.
-
-# Improvements
-
-The weight of the Y-axis is probably more than it needs to be, a redesign of the Y-axis carriers to use 2020 instead of 2040 would halve the weight and probably improve acceleration and speed even further.
