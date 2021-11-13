@@ -19,3 +19,8 @@ The build is fairly simple, you'll need access to a 3D printer to print off the 
 The rest of the parts you'll need are here; https://docs.google.com/spreadsheets/d/1bjWigQsAcE3DGmHS4qicfL3H79G1RvEPnRx3VYNnScU/
 
 There is a build guide in the hardware folder.
+
+The firmware folder contains the machine configuration for use with Grbl_ESP32.
+
+The software folder contains a configuration file for use with vpype and vpype-gcode.
+
