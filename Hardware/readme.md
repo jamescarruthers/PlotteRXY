@@ -20,7 +20,7 @@ Only print one Y-axis folder - depending on what extrusion profile you are using
 ![Belt path](./Images/IMG_5494.jpeg)
 ![Belt path](./Images/IMG_5495.jpeg)
 
-13. Install belt tensioners and set them to loose. Tension the belts to the same tension. It is vital that the belts are the same tension, if they are not at the same tension then the y-axis will be at an angle. Move the y-axis against the corner pulley mounts and adjust until both y-axis gantries rest against their respective corner pulley mounts. If the tension is different you will see that one y-axis gantry is further away from the corner pulley mount than the other. Once you have manually tensioned the belts so that the y-axis gantries are less than a few mm away from the corner pulley mounts use the belt tensioners to fine tune.
+13. Install belt tensioners and set them to loose. Tension the belts to the same tension. It is vital that the belts are the same tension, if they are not at the same tension then the y-axis will be at an angle. Move the y-axis against the corner pulley mounts and adjust until both y-axis carriages rest against their respective corner pulley mounts. If the tension is different you will see that one y-axis gantry is further away from the corner pulley mount than the other. Once you have manually tensioned the belts so that the y-axis gantries are less than a few mm away from the corner pulley mounts use the belt tensioners to fine tune.
 14. Build up pen lift and install on to gantry. Attach the solenoid to the heater output on the controller board.
 15. Install limit switches and wire to TB and TE connector on board.
 
