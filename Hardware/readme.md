@@ -18,6 +18,7 @@ Only print one Y-axis folder - depending on what extrusion profile you are using
 12. Install belts and attach to gantry. They should not be tight at this stage — but should not droop. Leave at least 80mm of extra belt on the back side of the z-axis gantry.
 
 ![Belt path](https://corexy.com/reference.png)
+
 ![Belt path](./Photos/IMG_5494.jpeg)
 ![Belt path](./Photos/IMG_5495.jpeg)
 
