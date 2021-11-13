@@ -17,8 +17,6 @@ Only print one Y-axis folder - depending on what extrusion profile you are using
 11. Install the servos in to the servo mounts, being sure to vertically align the toothed pulley with the pulleys on the mount.
 12. Install belts and attach to gantry. They should not be tight at this stage — but should not droop. Leave at least 80mm of extra belt on the back side of the z-axis gantry.
 
-![Belt path](./Images/diagram.png)
-
 ![Belt path](./Images/IMG_5494.jpeg)
 ![Belt path](./Images/IMG_5495.jpeg)
 
