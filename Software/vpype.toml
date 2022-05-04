@@ -7,8 +7,6 @@
 # G0 - rapid move
 # G1 - controlled move
 # G4 P1.0 - wait 1.0s
-# M3 - enable solenoid output
-# M5 - disable solenoid output
 # G00 Z1 - activate solenoid (pen up)
 # G00 Z0 - deactivate solenoid (pen down)
 
@@ -16,7 +14,7 @@
 default_profile = "plotterxy"
 
 [gwrite.plotterxy]
-document_start = "G17 G21 G90 G54 M3\n"
+document_start = "G17 G21 G90 G54\n"
 segment_first = "G00 X{x:.2f} Y{y:.2f}\nG00 Z0\nG4 P0.250\n"
 segment = "G01 X{x:.2f} Y{y:.2f} F5000\n"
 segment_last = "G01 X{x:.2f} Y{y:.2f} F5000\nG00 Z1\n"
