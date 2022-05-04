@@ -4,7 +4,7 @@ https://github.com/abey79/vpype
 Install vpype-gcode
 https://github.com/plottertools/vpype-gcode/
 
-See the section "Defining Your Own Profiles" and use the file above. You will need to rename it .vpype.toml
+Understand how to use the supplied toml file here; https://vpype.readthedocs.io/en/latest/cookbook.html?highlight=vpype.toml#creating-a-custom-configuration-file
 
 You should then be able to run: "vpype read input.svg gwrite output.gcode" to create a gcode file.
 
