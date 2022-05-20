@@ -12,6 +12,8 @@ Y extrusion = length + 180 = 420 + 180 = 600mm
 
 Y axis = Y extrusion - 13 = 587mm
 
+These numbers have a bit of excess to allow a bit of movement around the outside of the plot area.
+
 
 # Hardware build guide
 
