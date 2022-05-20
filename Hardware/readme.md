@@ -2,6 +2,14 @@
 
 Only print one Y-axis folder - depending on what extrusion profile you are using for your y-axis.
 
+# How long should my extrusions be?
+
+First work out your plotting area. Let's say you want to build an A2 machine; 600 x 420 (rounded up)
+
+Y extrusion length = 420 + 180 = 600mm
+X extrusion length = 600 + 240 = 840mm
+Y axis length = Y extrusion length - 13 = 587mm
+
 # Hardware build guide
 
 1. Print out a corner pulley mount and check that it fits snuggly into your v-slot extrusion. If it doesn't you might need to recalibrate your printer.
