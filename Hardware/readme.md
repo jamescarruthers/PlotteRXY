@@ -7,8 +7,11 @@ Only print one Y-axis folder - depending on what extrusion profile you are using
 First work out your plotting area. Let's say you want to build an A2 machine; 600 x 420 (rounded up)
 
 Y extrusion length = 420 + 180 = 600mm
+
 X extrusion length = 600 + 240 = 840mm
+
 Y axis length = Y extrusion length - 13 = 587mm
+
 
 # Hardware build guide
 
