@@ -4,7 +4,7 @@ Only print one Y-axis folder - depending on what extrusion profile you are using
 
 # How long should my extrusions be?
 
-First work out your plotting area. Let's say you want to build an A2 machine; 600 x 420 (rounded up)
+Let's say you want to build an A2 machine; 600 x 420 (rounded up)
 
 X extrusion = width + 240 = 600 + 240 = 840mm
 
