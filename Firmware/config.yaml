@@ -42,7 +42,7 @@ axes:
           baud: 115200
           mode: 8N1
         addr: 1
-        r_sense_ohms: 0.220
+        r_sense_ohms: 0.110
         run_amps: 1.800
         hold_amps: 1.000
         microsteps: 16
@@ -81,7 +81,7 @@ axes:
       pulloff_mm: 10.000
       tmc_2209:
         addr: 3
-        r_sense_ohms: 0.220
+        r_sense_ohms: 0.110
         run_amps: 1.800
         hold_amps: 1.000
         microsteps: 16
