@@ -17,16 +17,16 @@ axes:
   x:
     steps_per_mm: 80
     max_rate_mm_per_min: 12000
-    acceleration_mm_per_sec2: 4000
-    max_travel_mm: 200
+    acceleration_mm_per_sec2: 120000
+    max_travel_mm: 860
     soft_limits: true
     homing:
       cycle: 2
       allow_single_axis: true
-      mpos_mm: 200
+      mpos_mm: 860
       positive_direction: true
-      seek_mm_per_min: 1000
-      feed_mm_per_min: 200
+      seek_mm_per_min: 4000
+      feed_mm_per_min: 600
       settle_ms: 200
       seek_scaler: 1.100
       feed_scaler: 1.100
@@ -61,16 +61,16 @@ axes:
   y:
     steps_per_mm: 80
     max_rate_mm_per_min: 12000
-    acceleration_mm_per_sec2: 4000
-    max_travel_mm: 200
+    acceleration_mm_per_sec2: 120000
+    max_travel_mm: 600
     soft_limits: true
     homing:
       cycle: 1
       allow_single_axis: true
-      mpos_mm: 200
+      mpos_mm: 600
       positive_direction: true
-      seek_mm_per_min: 1000
-      feed_mm_per_min: 200
+      seek_mm_per_min: 4000
+      feed_mm_per_min: 600
       settle_ms: 200
       seek_scaler: 1.100
       feed_scaler: 1.100
@@ -106,11 +106,11 @@ axes:
     motor0:
       solenoid:
         output_pin: gpio.2
-        pwm_hz: 30000
+        pwm_hz: 50000
         off_percent: 0.000
         pull_percent: 100.000
-        hold_percent: 40.000
-        pull_ms: 200
+        hold_percent: 15.000
+        pull_ms: 25
         direction_invert: false
 
 spi:
