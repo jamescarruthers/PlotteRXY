@@ -8,4 +8,6 @@ Understand how to use the supplied toml file here; https://vpype.readthedocs.io/
 
 You should then be able to run: "vpype read input.svg gwrite output.gcode" to create a gcode file.
 
-You may need to adjust the S and G commands to accomodate the weight of the pen or the pen lift mechanism. S controls the PWM and G the delay time in seconds. Ideally adjust these numbers to the lowest values possible.
+You might want to try "vpype read input.svg linemerge linesort reloop linesimplify output.gcode" to create more efficient plots.
+
+You may want to adjust the pen drop time in the .toml file "G4 P0.250" – the P setting adjusts how long the plotter waits for the pen to drop before starting the line. "G4 P0.250" means "pause for 0.250 seconds".
