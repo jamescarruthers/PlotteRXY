@@ -74,7 +74,7 @@
 #define X_TRINAMIC_DRIVER       2209
 #define X_STEP_PIN              GPIO_NUM_27
 #define X_DIRECTION_PIN         GPIO_NUM_26
-#define X_RSENSE                0.22f
+#define X_RSENSE                0.11f
 #define X_DRIVER_ADDRESS        1
 #define DEFAULT_X_MICROSTEPS    16
 #define DEFAULT_X_CURRENT       1.8
@@ -84,7 +84,7 @@
 #define Y_TRINAMIC_DRIVER       2209
 #define Y_STEP_PIN              GPIO_NUM_33
 #define Y_DIRECTION_PIN         GPIO_NUM_32
-#define Y_RSENSE                0.22f
+#define Y_RSENSE                0.11f
 #define Y_DRIVER_ADDRESS        3
 #define DEFAULT_Y_MICROSTEPS    16
 #define DEFAULT_Y_CURRENT       1.8
