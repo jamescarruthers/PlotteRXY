@@ -109,8 +109,8 @@
 
 //#define X_LIMIT_PIN             GPIO_NUM_34
 //#define Y_LIMIT_PIN             GPIO_NUM_35
-#define X_LIMIT_PIN             GPIO_NUM_39 // labelled TE
-#define Y_LIMIT_PIN             GPIO_NUM_36 // labelled TB
+#define X_LIMIT_PIN             GPIO_NUM_34 // labelled X-MIN
+#define Y_LIMIT_PIN             GPIO_NUM_35 // labelled Y-MIN
 //#define Z_LIMIT_PIN             GPIO_NUM_15
 //#define A_LIMIT_PIN             GPIO_NUM_36   // Labeled TB
 //#define PROBE_PIN               GPIO_NUM_39  // Labeled TE
