@@ -1,0 +1,17 @@
+# G4 P1.0 - wait 1.0s
+# M3 - enable solenoid output
+# M5 - disable solenoid output
+# S1 - raise pen / solenoid
+# S0 - lower pen / solenoid
+
+[gwrite]
+default_profile = "plotterxy"
+
+[gwrite.plotterxy]
+document_start = "G17 G21 G90 G54 M3\n"
+segment_first = "G00 X{x:.2f} Y{y:.2f}\nS0\nG4 P0.250\n"
+segment = "G01 X{x:.2f} Y{y:.2f} F5000\n"
+segment_last = "G01 X{x:.2f} Y{y:.2f} F5000\nS400\nG4 P0.1\nS150\n"
+document_end = ""
+unit = "mm"
+invert_y = "True"
