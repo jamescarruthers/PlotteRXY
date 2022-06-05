@@ -4,11 +4,11 @@ PlotterXY uses FluidNC: https://github.com/bdring/FluidNC
 2. Upload the yaml config file to your board.
 3. Restart the machine.
 
-X-MOT: X stepper motor
-Y-MOT: Y stepper motor
-X-MIN: X limit switch
-Y-MIN: Y limit switch (on the z-axis gantry)
-HEATER: Solenoid
+• X-MOT: X stepper motor
+• Y-MOT: Y stepper motor
+• X-MIN: X limit switch
+• Y-MIN: Y limit switch (on the z-axis gantry)
+• HEATER: Solenoid
 
 You will also need to put jumpers to enable TMC2209 UART
 ![Jumpers](https://github.com/FYSETC/FYSETC-E4/raw/main/images/E4%E9%A9%B1%E5%8A%A8%E8%B7%B3%E7%BA%BF.png)
