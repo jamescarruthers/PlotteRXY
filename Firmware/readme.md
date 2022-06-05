@@ -11,7 +11,7 @@ Y-MIN: Y limit switch (on the z-axis gantry)
 HEATER: Solenoid
 
 You will also need to put jumpers to enable TMC2209 UART
-!(https://github.com/FYSETC/FYSETC-E4/raw/main/images/E4%E9%A9%B1%E5%8A%A8%E8%B7%B3%E7%BA%BF.png)
+![Jumpers](https://github.com/FYSETC/FYSETC-E4/raw/main/images/E4%E9%A9%B1%E5%8A%A8%E8%B7%B3%E7%BA%BF.png)
 
 Before switching on the first time, move the gantry in to the centre of the work area. Turn on and connect to the web UI. Click on the clear alarm button. Use the jog function to check that the gantry moves in the correct direction. If it does not, then adjust the direction_pin in the config file from high to low on the relevant axis.
 
