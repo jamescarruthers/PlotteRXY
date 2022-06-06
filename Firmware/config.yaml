@@ -7,6 +7,7 @@ stepping:
   dir_delay_us: 1
   pulse_us: 2
   disable_delay_us: 0
+  segments: 20
 
 kinematics:
   corexy:
@@ -17,7 +18,7 @@ axes:
   x:
     steps_per_mm: 80
     max_rate_mm_per_min: 12000
-    acceleration_mm_per_sec2: 120000
+    acceleration_mm_per_sec2: 1200
     max_travel_mm: 860
     soft_limits: true
     homing:
@@ -43,8 +44,8 @@ axes:
           mode: 8N1
         addr: 1
         r_sense_ohms: 0.110
-        run_amps: 1.800
-        hold_amps: 1.000
+        run_amps: 2.00
+        hold_amps: 2.000
         microsteps: 16
         stallguard: 0
         stallguard_debug: false
@@ -61,7 +62,7 @@ axes:
   y:
     steps_per_mm: 80
     max_rate_mm_per_min: 12000
-    acceleration_mm_per_sec2: 120000
+    acceleration_mm_per_sec2: 1200
     max_travel_mm: 600
     soft_limits: true
     homing:
@@ -82,8 +83,8 @@ axes:
       tmc_2209:
         addr: 3
         r_sense_ohms: 0.110
-        run_amps: 1.800
-        hold_amps: 1.000
+        run_amps: 2.000
+        hold_amps: 2.000
         microsteps: 16
         stallguard: 0
         stallguard_debug: false
@@ -98,15 +99,15 @@ axes:
         disable_pin: NO_PIN
 
   z:
-    steps_per_mm: 100
-    max_rate_mm_per_min: 100000
-    acceleration_mm_per_sec2: 1000000
+    steps_per_mm: 80
+    max_rate_mm_per_min: 1000
+    acceleration_mm_per_sec2: 1000
     max_travel_mm: 5
 
     motor0:
       solenoid:
         output_pin: gpio.2
-        pwm_hz: 50000
+        pwm_hz: 30000
         off_percent: 0.000
         pull_percent: 100.000
         hold_percent: 15.000
