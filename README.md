@@ -24,4 +24,6 @@ The firmware folder contains the machine configuration for use with Grbl_ESP32.
 
 The software folder contains a configuration file for use with vpype and vpype-gcode.
 
+# Donate
+
 If you appreciate this project, please consider donating: https://www.paypal.com/donate/?hosted_button_id=BHS97LUK2LCB6
