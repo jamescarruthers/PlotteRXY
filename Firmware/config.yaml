@@ -16,6 +16,7 @@ axes:
   shared_stepper_disable_pin: gpio.25:high
 
   x:
+# 16t = 100, 20t = 80 – change for y axes also
     steps_per_mm: 80
     max_rate_mm_per_min: 12000
     acceleration_mm_per_sec2: 1200
