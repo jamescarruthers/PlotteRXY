@@ -1,5 +1,3 @@
-![Naming diagram](./diagram.png)
-
 *The 2040 Y-axis is depreciated at this time.* Only print one Y-axis folder - depending on what extrusion profile you are using for your y-axis. Unless you are making a giant A0 or larger plotter then use the 2020 sized version. Note that this design hasn't been tested above A1 size.
 
 # How long should my extrusions be?
@@ -14,6 +12,7 @@ Y axis = Y extrusion - 13 = 587mm
 
 These numbers have a bit of excess to allow a bit of movement around the outside of the plot area.
 
+![Naming diagram](./diagram.png)
 
 # Hardware build guide
 
