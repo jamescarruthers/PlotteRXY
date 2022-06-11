@@ -1,6 +1,6 @@
 ![Naming diagram](./diagram.png)
 
-Only print one Y-axis folder - depending on what extrusion profile you are using for your y-axis.
+Only print one Y-axis folder - depending on what extrusion profile you are using for your y-axis. Unless you are making a giant plotter then use the 2020 sized version.
 
 # How long should my extrusions be?
 
