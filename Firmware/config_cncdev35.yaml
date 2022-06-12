@@ -13,7 +13,6 @@ kinematics:
   corexy:
 
 axes:
-  shared_stepper_disable_pin: gpio.25:high
 
   x:
 # 16t = 100, 20t = 80 – change for y axes also
@@ -34,31 +33,11 @@ axes:
       feed_scaler: 1.100
 
     motor0:
-      limit_pos_pin: gpio.34:high
+      limit_pos_pin: gpio.2:high:pu
       hard_limits: true
-      pulloff_mm: 10.000
-      tmc_2209:
-        uart:
-          txd_pin: gpio.22
-          rxd_pin: gpio.21
-          baud: 115200
-          mode: 8N1
-        addr: 1
-        r_sense_ohms: 0.110
-        run_amps: 1.8
-        hold_amps: 1.8
-        microsteps: 16
-        stallguard: 0
-        stallguard_debug: false
-        toff_disable: 0
-        toff_stealthchop: 5
-        toff_coolstep: 3
-        run_mode: StealthChop
-        homing_mode: StealthChop
-        use_enable: true
-        step_pin: gpio.27
-        direction_pin: gpio.26:high
-        disable_pin: NO_PIN
+      stepstick:
+        direction_pin: gpio.26
+        step_pin: gpio.12
 
   y:
     steps_per_mm: 80
@@ -78,26 +57,11 @@ axes:
       feed_scaler: 1.100
 
     motor0:
-      limit_pos_pin: gpio.35:high
+      limit_pos_pin: gpio.4:high:pu
       hard_limits: true
-      pulloff_mm: 10.000
-      tmc_2209:
-        addr: 3
-        r_sense_ohms: 0.110
-        run_amps: 1.800
-        hold_amps: 1.800
-        microsteps: 16
-        stallguard: 0
-        stallguard_debug: false
-        toff_disable: 0
-        toff_stealthchop: 5
-        toff_coolstep: 3
-        run_mode: StealthChop
-        homing_mode: StealthChop
-        use_enable: true
-        step_pin: gpio.33
-        direction_pin: gpio.32:high
-        disable_pin: NO_PIN
+      stepstick:
+        direction_pin: gpio.25
+        step_pin: gpio.14
 
   z:
     steps_per_mm: 80
@@ -106,14 +70,10 @@ axes:
     max_travel_mm: 5
     
     motor0:
-      solenoid:
-        output_pin: gpio.2
-        pwm_hz: 30000
-        off_percent: 0.000
-        pull_percent: 100.000
-        hold_percent: 15.000
-        pull_ms: 25
-        direction_invert: false
+      stepstick:
+        direction_pin: gpio.33
+        step_pin: gpio.27
+
 
 spi:
   miso_pin: gpio.19
