@@ -5,4 +5,4 @@ home = move to 0,0
 
 park = move the gantry out of the way to the top right
 
-The ***_UR macros are for helping to align materials. Use the home macro, place the bottom left corner of your material where the pen is. Then use the ***_UR macro to align the top right corner.
+The A*_UR macros are for helping to align materials. Use the home macro, place the bottom left corner of your material where the pen is. Then use the A*_UR macro to align the top right corner.
