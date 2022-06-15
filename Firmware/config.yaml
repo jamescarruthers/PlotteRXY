@@ -45,8 +45,8 @@ axes:
           mode: 8N1
         addr: 1
         r_sense_ohms: 0.110
-        run_amps: 1.8
-        hold_amps: 1.8
+        run_amps: 1.200
+        hold_amps: 0.800
         microsteps: 4
         stallguard: 0
         stallguard_debug: false
@@ -84,8 +84,8 @@ axes:
       tmc_2209:
         addr: 3
         r_sense_ohms: 0.110
-        run_amps: 1.800
-        hold_amps: 1.800
+        run_amps: 1.200
+        hold_amps: 0.800
         microsteps: 4
         stallguard: 0
         stallguard_debug: false
