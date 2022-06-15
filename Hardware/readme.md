@@ -27,10 +27,12 @@ These numbers have a bit of excess to allow a bit of movement around the outside
 9. Adjust all the mount screws until the frame is square. Adjust the eccentric nuts. The y-axis should slide left to right freely. Tighten the screws that hold the y-axis in place.
 10. Install all the pulleys. They pulleys should sit on a single shim spacer, with two shims in between the two bearings.
 11. Install the servos in to the servo mounts, being sure to vertically align the toothed pulley with the pulleys on the mount.
-12. Install belts and attach to gantry. They should not be tight at this stage — but should not droop. Leave at least 80mm of extra belt on the back side of the z-axis gantry.
+12. Install belts and attach to the belt tension plate. They should not be tight at this stage — but should not droop. Leave at least 80mm of extra belt so that you can adjust it later.
 
 ![Belt path](./Images/IMG_5494.jpeg)
 ![Belt path](./Images/IMG_5495.jpeg)
 
-13. Install belt tensioners and set them to loose. Tension the belts to the same tension. It is vital that the belts are the same tension, if they are not at the same tension then the y-axis will be at an angle. Move the y-axis against the corner pulley mounts and adjust until both y-axis carriages rest against their respective corner pulley mounts. If the tension is different you will see that one y-axis carriage is further away from the corner pulley mount than the other. Once you have manually tensioned the belts so that the y-axis carriage are less than a few mm away from the corner pulley mounts use the belt tensioners to fine tune.
-14. Build up pen lift and install on to gantry.
+13. Use the tensioners to get the belt tight. It should not be super tight, but the belt should not droop.
+14. Attach the belt tension plate to the z-axis gantry.
+15. Move the y-axis towards and up against the corner pulley mounts. Check that the y-axis is square by ensuring the gap between the rounded part of the y-axis carriages have equal space against the corner pulley mounts. Each y-axis carriage should sit flat against the corner pulleys. If they're not, then this means each belt has uneven tension. Use the belt tensioners to adjust, they should only need minimal movement.
+16. Build up pen lift and install on to gantry.
