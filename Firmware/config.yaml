@@ -4,7 +4,7 @@ board: "FYSETC E4"
 stepping:
   engine: RMT
   idle_ms: 255
-  dir_delay_us: 1
+  dir_delay_us: 0
   pulse_us: 2
   disable_delay_us: 0
   segments: 20
@@ -16,8 +16,8 @@ axes:
   shared_stepper_disable_pin: gpio.25:high
 
   x:
-# 16t = 100, 20t = 80 – change for y axes also
-    steps_per_mm: 80
+# 16t = 100, 20t = 80 for 16 microsteps – change for y axes also
+    steps_per_mm: 20
     max_rate_mm_per_min: 12000
     acceleration_mm_per_sec2: 1200
     max_travel_mm: 860
@@ -47,7 +47,7 @@ axes:
         r_sense_ohms: 0.110
         run_amps: 1.8
         hold_amps: 1.8
-        microsteps: 16
+        microsteps: 4
         stallguard: 0
         stallguard_debug: false
         toff_disable: 0
@@ -61,7 +61,7 @@ axes:
         disable_pin: NO_PIN
 
   y:
-    steps_per_mm: 80
+    steps_per_mm: 20
     max_rate_mm_per_min: 12000
     acceleration_mm_per_sec2: 1200
     max_travel_mm: 600
@@ -86,7 +86,7 @@ axes:
         r_sense_ohms: 0.110
         run_amps: 1.800
         hold_amps: 1.800
-        microsteps: 16
+        microsteps: 4
         stallguard: 0
         stallguard_debug: false
         toff_disable: 0
