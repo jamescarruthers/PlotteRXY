@@ -17,7 +17,7 @@ axes:
 
   x:
 # 16t = 100, 20t = 80 for 16 microsteps – change for y axes also
-    steps_per_mm: 20
+    steps_per_mm: 80
     max_rate_mm_per_min: 12000
     acceleration_mm_per_sec2: 1200
     max_travel_mm: 860
@@ -47,7 +47,7 @@ axes:
         r_sense_ohms: 0.110
         run_amps: 1.200
         hold_amps: 0.800
-        microsteps: 4
+        microsteps: 16
         stallguard: 0
         stallguard_debug: false
         toff_disable: 0
@@ -61,7 +61,7 @@ axes:
         disable_pin: NO_PIN
 
   y:
-    steps_per_mm: 20
+    steps_per_mm: 80
     max_rate_mm_per_min: 12000
     acceleration_mm_per_sec2: 1200
     max_travel_mm: 600
@@ -86,7 +86,7 @@ axes:
         r_sense_ohms: 0.110
         run_amps: 1.200
         hold_amps: 0.800
-        microsteps: 4
+        microsteps: 16
         stallguard: 0
         stallguard_debug: false
         toff_disable: 0
