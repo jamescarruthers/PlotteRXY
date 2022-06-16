@@ -13,13 +13,12 @@ kinematics:
   corexy:
 
 axes:
-  shared_stepper_disable_pin: gpio.25:high
 
   x:
 # 16t = 100, 20t = 80 for 16 microsteps – change for y axes also
-    steps_per_mm: 80
-    max_rate_mm_per_min: 12000
-    acceleration_mm_per_sec2: 1200
+    steps_per_mm: 40
+    max_rate_mm_per_min: 64000
+    acceleration_mm_per_sec2: 2400
     max_travel_mm: 860
     soft_limits: true
     homing:
@@ -47,7 +46,7 @@ axes:
         r_sense_ohms: 0.110
         run_amps: 1.200
         hold_amps: 0.800
-        microsteps: 16
+        microsteps: 8
         stallguard: 0
         stallguard_debug: false
         toff_disable: 0
@@ -61,9 +60,9 @@ axes:
         disable_pin: NO_PIN
 
   y:
-    steps_per_mm: 80
-    max_rate_mm_per_min: 12000
-    acceleration_mm_per_sec2: 1200
+    steps_per_mm: 40
+    max_rate_mm_per_min: 64000
+    acceleration_mm_per_sec2: 2400
     max_travel_mm: 600
     soft_limits: true
     homing:
@@ -86,7 +85,7 @@ axes:
         r_sense_ohms: 0.110
         run_amps: 1.200
         hold_amps: 0.800
-        microsteps: 16
+        microsteps: 8
         stallguard: 0
         stallguard_debug: false
         toff_disable: 0
@@ -123,6 +122,10 @@ spi:
 sdcard:
   cs_pin: gpio.5
   card_detect_pin: NO_PIN
+
+coolant:
+  mist_pin: gpio.13
+  delay: 0
 
 macros:
   startup_line0:

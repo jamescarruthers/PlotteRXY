@@ -1,0 +1,74 @@
+[
+ {
+  "name": "Pen Up",
+  "glyph": "arrow-up",
+  "filename": "macros/penUp.g",
+  "target": "SD",
+  "class": "btn-default",
+  "index": 0
+ },
+ {
+  "name": "Pen Down",
+  "glyph": "arrow-down",
+  "filename": "macros/penDown.g",
+  "target": "SD",
+  "class": "btn-default",
+  "index": 1
+ },
+ {
+  "name": "Zero",
+  "glyph": "screenshot",
+  "filename": "macros/zero.g",
+  "target": "SD",
+  "class": "btn-default",
+  "index": 2
+ },
+ {
+  "name": "Park",
+  "glyph": "fullscreen",
+  "filename": "macros/park.g",
+  "target": "SD",
+  "class": "btn-default",
+  "index": 3
+ },
+ {
+  "name": "A1",
+  "glyph": "move",
+  "filename": "macros/A1_UR.g",
+  "target": "SD",
+  "class": "btn-default",
+  "index": 4
+ },
+ {
+  "name": "A2",
+  "glyph": "move",
+  "filename": "macros/A2_UR.g",
+  "target": "SD",
+  "class": "btn-default",
+  "index": 5
+ },
+ {
+  "name": "A3",
+  "glyph": "move",
+  "filename": "macros/A3_UR.g",
+  "target": "SD",
+  "class": "btn-default",
+  "index": 6
+ },
+ {
+  "name": "A4",
+  "glyph": "move",
+  "filename": "macros/A4_UR.g",
+  "target": "SD",
+  "class": "btn-default",
+  "index": 7
+ },
+ {
+  "name": "A5",
+  "glyph": "move",
+  "filename": "macros/A5_UR.g",
+  "target": "SD",
+  "class": "btn-default",
+  "index": 8
+ }
+]
