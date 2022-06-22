@@ -4,6 +4,10 @@ PlotterXY uses FluidNC: https://github.com/bdring/FluidNC
 2. Upload the yaml config file to your board.
 3. Restart the machine.
 
+Be sure to use the supplied heatsinks, they should go on the rear of the board. I recommend using up the two spare heatsinks on the front of the ICs too.
+
+*Note that the Y stepper is connected to the connector labelled Z-MOT – this is just to help thermals.
+
 Connections:
 * X-MOT: X stepper motor
 * Z-MOT: Y stepper motor
@@ -11,7 +15,7 @@ Connections:
 * Y-MIN: Y limit switch (on the z-axis gantry)
 * HEATER: Solenoid
 
-You will also need to use two jumpers to enable TMC2209 UART:
+Check that these two jumpers are set for UART:
 
 ![Jumpers](https://github.com/FYSETC/FYSETC-E4/raw/main/images/E4%E9%A9%B1%E5%8A%A8%E8%B7%B3%E7%BA%BF.png)
 
