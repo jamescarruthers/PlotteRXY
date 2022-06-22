@@ -6,7 +6,7 @@ PlotterXY uses FluidNC: https://github.com/bdring/FluidNC
 
 Connections:
 * X-MOT: X stepper motor
-* Y-MOT: Y stepper motor
+* Z-MOT: Y stepper motor
 * X-MIN: X limit switch
 * Y-MIN: Y limit switch (on the z-axis gantry)
 * HEATER: Solenoid
