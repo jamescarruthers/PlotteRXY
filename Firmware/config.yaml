@@ -4,7 +4,7 @@ board: "FYSETC E4"
 stepping:
   engine: RMT
   idle_ms: 255
-  dir_delay_us: 0
+  dir_delay_us: 2
   pulse_us: 2
   disable_delay_us: 0
   segments: 20
@@ -12,11 +12,27 @@ stepping:
 kinematics:
   corexy:
 
+# 20t pulley
+# steps per mm/microsteps   80/16   40/8    20/4    10/2    5/1
+# resolution in mm          0.0125  0.025   0.050   0.100   0.200
+
+# 16t pulley
+# steps per mm/microsteps   100/16  50/8    25/4    12.5/2  6.25/1
+# resolution in mm          0.010   0.020   0.050   0.080   0.160
+
+# 1/4 microsteps gives best torque for a wide range of speeds
+
+# Board stepper driver address and gpio
+# axis  add   step  dir
+# x     1     27    26
+# y     3     33    32
+# z     0     14    12
+# e     2     16    17
+
 axes:
 
   x:
-# 16t = 100, 20t = 80 for 16 microsteps – change for y axes also
-    steps_per_mm: 40
+    steps_per_mm: 20
     max_rate_mm_per_min: 64000
     acceleration_mm_per_sec2: 2400
     max_travel_mm: 860
@@ -46,7 +62,7 @@ axes:
         r_sense_ohms: 0.110
         run_amps: 1.200
         hold_amps: 0.800
-        microsteps: 8
+        microsteps: 4
         stallguard: 0
         stallguard_debug: false
         toff_disable: 0
@@ -60,7 +76,7 @@ axes:
         disable_pin: NO_PIN
 
   y:
-    steps_per_mm: 40
+    steps_per_mm: 20
     max_rate_mm_per_min: 64000
     acceleration_mm_per_sec2: 2400
     max_travel_mm: 600
@@ -81,11 +97,11 @@ axes:
       hard_limits: true
       pulloff_mm: 10.000
       tmc_2209:
-        addr: 3
+        addr: 0
         r_sense_ohms: 0.110
         run_amps: 1.200
         hold_amps: 0.800
-        microsteps: 8
+        microsteps: 4
         stallguard: 0
         stallguard_debug: false
         toff_disable: 0
@@ -94,14 +110,14 @@ axes:
         run_mode: StealthChop
         homing_mode: StealthChop
         use_enable: true
-        step_pin: gpio.33
-        direction_pin: gpio.32:high
+        step_pin: gpio.14
+        direction_pin: gpio.12:high
         disable_pin: NO_PIN
 
   z:
     steps_per_mm: 80
-    max_rate_mm_per_min: 1000
-    acceleration_mm_per_sec2: 1000
+    max_rate_mm_per_min: 64000
+    acceleration_mm_per_sec2: 4800
     max_travel_mm: 5
     
     motor0:
@@ -110,8 +126,8 @@ axes:
         pwm_hz: 30000
         off_percent: 0.000
         pull_percent: 100.000
-        hold_percent: 15.000
-        pull_ms: 25
+        hold_percent: 40.000
+        pull_ms: 50
         direction_invert: false
 
 spi:
@@ -123,6 +139,7 @@ sdcard:
   cs_pin: gpio.5
   card_detect_pin: NO_PIN
 
+# run a fan off the 24V/5V fan header – switch on and off with the WebUI mist button or by issuing an M8 command, turn off with M9
 coolant:
   mist_pin: gpio.13
   delay: 0
