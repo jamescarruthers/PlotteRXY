@@ -33,7 +33,7 @@ axes:
 
   x:
     steps_per_mm: 20
-    max_rate_mm_per_min: 64000
+    max_rate_mm_per_min: 48000
     acceleration_mm_per_sec2: 2400
     max_travel_mm: 860
     soft_limits: true
@@ -77,7 +77,7 @@ axes:
 
   y:
     steps_per_mm: 20
-    max_rate_mm_per_min: 64000
+    max_rate_mm_per_min: 48000
     acceleration_mm_per_sec2: 2400
     max_travel_mm: 600
     soft_limits: true
