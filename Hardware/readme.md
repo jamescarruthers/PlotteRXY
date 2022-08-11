@@ -26,7 +26,7 @@ These numbers have a bit of excess to allow a bit of movement around the outside
 8. Install the pulley mounts, end caps and attach the final extrusion to close the frame.
 9. Adjust all the mount screws until the frame is square. Adjust the eccentric nuts. The y-axis should slide left to right freely. Tighten the screws that hold the y-axis in place.
 10. Install all the pulleys. They pulleys should sit on a single shim spacer, with two shims in between the two bearings.
-11. Install the servos in to the servo mounts, being sure to vertically align the toothed pulley with the pulleys on the mount.
+11. Install the servos in to the servo mounts, being sure to vertically align the toothed pulley with the pulleys on the mount. Depending on the pulley you may need to use one of the stepper spacers between the motor and the mount to align the belt so that it sits in the middle of the teeth on the pulley.
 12. Install belts and attach to the belt tension plate. They should not be tight at this stage — but should not droop. Leave at least 80mm of extra belt so that you can adjust it later.
 
 ![Belt path](./Images/IMG_5494.jpeg)
