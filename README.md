@@ -16,6 +16,12 @@ The toolchain is fairly simple; SVG ingested in to VPYPE and it's G-code plugin.
 
 The build is fairly simple, you'll need access to a 3D printer to print off the various parts. Most of the parts are symetrical, so it's a fairly simple list of parts.
 
+Ideally, print the parts in at least PETG but ASA or ABS would probably be better. My prototype machine has had no issues with matte PLA, which is probably the most brittle filament there is.
+
+Suggested print settings; 4 walls, 5 top and bottom layers, 40$ cubic infill.
+
+Print time on a Bambu P1S approx 12 hours at normal speed, and can be done over two plates. It uses 350g of filament.
+
 The rest of the parts you'll need are here; https://docs.google.com/spreadsheets/d/1bjWigQsAcE3DGmHS4qicfL3H79G1RvEPnRx3VYNnScU/
 
 There is a build guide in the hardware folder.
