@@ -18,9 +18,9 @@ The build is fairly simple, you'll need access to a 3D printer to print off the 
 
 Ideally, print the parts in at least PETG but ASA or ABS would probably be better. My prototype machine has had no issues with matte PLA, which is probably the most brittle filament there is.
 
-Suggested print settings; 4 walls, 5 top and bottom layers, 40$ cubic infill.
+Suggested print settings; 4 walls, 5 top and bottom layers, 40% cubic infill.
 
-Print time on a Bambu P1S approx 12 hours at normal speed, and can be done over two plates. It uses 350g of filament.
+Print time on a Bambu P1S is approx 13 hours at normal speed, and can be done over two plates. It uses 350g of filament in total.
 
 The rest of the parts you'll need are here; https://docs.google.com/spreadsheets/d/1bjWigQsAcE3DGmHS4qicfL3H79G1RvEPnRx3VYNnScU/
 
