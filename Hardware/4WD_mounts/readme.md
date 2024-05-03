@@ -1,8 +1,8 @@
 This is currently experimental and untested.
 
-You do not need these mounts if y
-
 This mount replaces the standard pulley mounts.
+
+You do not need these mounts if you are only running two motors. If you plan to upgrade to 4WD later then you can use these mounts without the motors.
 
 Use the following procedure to make sure the pulley teeth are synchronised.
 
