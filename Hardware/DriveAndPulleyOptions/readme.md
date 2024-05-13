@@ -2,7 +2,7 @@ There are a few different options for drive and pulley configurations depending 
 
 V2 is suggested for new builds as it's a much neater layout, allowing one end of the plotter to be free of belt and any kind of wiring.
 
-## V1
+## V1 Original
 
 * 2 x stepper mount
 * 2 x pulley mount
