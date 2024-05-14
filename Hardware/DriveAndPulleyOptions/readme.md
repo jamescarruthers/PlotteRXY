@@ -7,14 +7,14 @@ V2 is suggested for new builds as it's a much neater layout, allowing one end of
 * 2 x stepper mount
 * 2 x pulley mount
 
-![Naming diagram](./../images/V1.png)
+![V1](./../images/V1.png)
 
 ## V1 with 4-wheel-drive
 
 * 2 x stepper mount
 * 2 x stepper corner mount
 
-![Naming diagram](./../images/4WD.png)
+![V1AWD](./../images/4WD.png)
 
 
 ## V2
@@ -22,7 +22,7 @@ V2 is suggested for new builds as it's a much neater layout, allowing one end of
 * 2 x stepper corner mount
 * 2 x pulley mount
 
-![Naming diagram](./../images/V2.png)
+![V2](./../images/V2.png)
 
 
 ## V2 with central drive
@@ -30,7 +30,7 @@ V2 is suggested for new builds as it's a much neater layout, allowing one end of
 * 1 x central drive
 * 4 x pulley mount
 
-![Naming diagram](./../images/Central.png)
+![V2 central drive](./../images/Central.png)
 
 This configuration mounts the two steppers together, place it in the middle of the rail.
 
