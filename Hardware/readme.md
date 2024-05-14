@@ -12,7 +12,7 @@ Y axis = Y extrusion - 13 = 587mm
 
 These numbers have a bit of excess to allow a bit of movement around the outside of the plot area.
 
-![Naming diagram](./diagram.png)
+![Naming diagram](./images/diagram.png)
 
 # Hardware build guide
 
@@ -29,10 +29,12 @@ These numbers have a bit of excess to allow a bit of movement around the outside
 11. Install the servos in to the servo mounts, being sure to vertically align the toothed pulley with the pulleys on the mount. Depending on the pulley you may need to use one of the stepper spacers between the motor and the mount to align the belt so that it sits in the middle of the teeth on the pulley.
 12. Install belts and attach to the belt tension plate. They should not be tight at this stage — but should not droop. Leave at least 80mm of extra belt so that you can adjust it later.
 
-![Belt path](./Images/IMG_5494.jpeg)
-![Belt path](./Images/IMG_5495.jpeg)
+![Naming diagram](./images/BeltPath.png)
 
 13. Use the tensioners to get the belt tight. It should not be super tight, but the belt should not droop.
 14. Attach the belt tension plate to the z-axis gantry.
 15. Move the y-axis towards and up against the corner pulley mounts. Check that the y-axis is square by ensuring the gap between the rounded part of the y-axis carriages have equal space against the corner pulley mounts. Each y-axis carriage should sit flat against the corner pulleys. If they're not, then this means each belt has uneven tension. Use the belt tensioners to adjust, they should only need minimal movement.
 16. Build up pen lift and install on to gantry.
+
+![Belt path](./images/IMG_5494.jpeg)
+![Belt path](./images/IMG_5495.jpeg)

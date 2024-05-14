@@ -1,8 +1,31 @@
-This is currently experimental and untested.
+There are a few different options for drive and pulley configurations depending on what you want to achieve.
 
-This mount replaces the standard pulley mounts.
+V2 is suggested for new builds as it's a much neater layout, allowing one end of the plotter to be free of belt and any kind of wiring.
 
-You do not need these mounts if you are only running two motors. If you plan to upgrade to 4WD later then you can use these mounts without the motors.
+## V1 Original
+
+* 2 x stepper mount
+* 2 x pulley mount
+
+## V1 with 4-wheel-drive
+
+* 2 x stepper mount
+* 2 x stepper corner mount
+
+## V2
+
+* 2 x stepper corner mount
+* 2 x pulley mount
+
+## V2 with central drive
+
+* 1 x central drive
+* 4 x pulley mount
+
+This configuration mounts the two steppers together, place it in the middle of the rail.
+
+
+## 4-wheel-drive tensioning procedure
 
 Use the following procedure to make sure the pulley teeth are synchronised.
 
