@@ -36,5 +36,5 @@ These numbers have a bit of excess to allow a bit of movement around the outside
 15. Move the y-axis towards and up against the corner pulley mounts. Check that the y-axis is square by ensuring the gap between the rounded part of the y-axis carriages have equal space against the corner pulley mounts. Each y-axis carriage should sit flat against the corner pulleys. If they're not, then this means each belt has uneven tension. Use the belt tensioners to adjust, they should only need minimal movement.
 16. Build up pen lift and install on to gantry.
 
-![Belt path](./images/IMG_5494.jpeg)
-![Belt path](./images/IMG_5495.jpeg)
+![Belt path](./Images/IMG_5494.jpeg)
+![Belt path](./Images/IMG_5495.jpeg)
