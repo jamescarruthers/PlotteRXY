@@ -51,11 +51,11 @@ Use the following procedure to make sure the pulley teeth are synchronised.
 
 ## Thoughts on drive position
 
-If our aim is to drive the belt somewhere in the middle of the belt then there's only really one position.
+Our aim is to drive a belt somewhere in the middle so that we have equal lengths on either side. A long belt is going to be more prone to vibration.
 
-Below is a diagram showing the middle of the belt at various different extents.
+Below is a diagram showing the middle of the belt at different extents.
 
-The red line shows the range, the red arrow shows the middle of the range. This is the ideal position for the driven pulley.
+The red line shows the range and the red arrow shows the middle of the range. This is the ideal position for the driven pulley. We are constrained by putting the motor in a corner - luckily, a corner is not far away.
 
 For 4-wheel-drive we would want to position motors at either end of the range.
 
