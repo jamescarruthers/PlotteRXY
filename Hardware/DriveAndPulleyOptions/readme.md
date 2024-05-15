@@ -49,3 +49,15 @@ Use the following procedure to make sure the pulley teeth are synchronised.
 8. Reconnect the 4WD steppers.
 9. Power the plotter on.
 
+## Thoughts on drive position
+
+If our aim is to drive the belt somewhere in the middle of the belt then there's only really one position.
+
+Below is a diagram showing the middle of the belt at various different extents.
+
+The red line shows the range, the red arrow shows the middle of the range. This is the ideal position for the driven pulley.
+
+For 4-wheel-drive we would want to position motors at either end of the range.
+
+![V2 central drive](./../images/drivePosition.png)
+
