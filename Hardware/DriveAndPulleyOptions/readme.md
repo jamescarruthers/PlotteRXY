@@ -1,6 +1,6 @@
 There are a few different options for drive and pulley configurations depending on what you want to achieve.
 
-V2 is suggested for new builds as it's a much neater layout, allowing one end of the plotter to be free of belt and any kind of wiring.
+V2 is suggested for new builds as it's a much neater layout, allowing one end of the plotter to be free of belt and any kind of wiring. It also drives the middle of the belt, rather than more towards one end.
 
 ## V1 Original
 
