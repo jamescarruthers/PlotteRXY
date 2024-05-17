@@ -11,15 +11,15 @@ V2 is suggested for new builds as it's a much neater layout, allowing one end of
 
 ## V1 with 4-wheel-drive
 
-* 2 x stepper mount
-* 2 x stepper corner mount
+* 2 x V1 stepper mount
+* 2 x V1 stepper mount AWD
 
 ![V1AWD](./../images/4WD.png)
 
 
 ## V2
 
-* 2 x stepper corner mount
+* 2 x V2 stepper mount
 * 2 x pulley mount
 
 ![V2](./../images/V2.png)
