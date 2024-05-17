@@ -4,7 +4,7 @@ V2 is suggested for new builds as it's a much neater layout, allowing one end of
 
 ## V1 Original
 
-* 2 x stepper mount
+* 2 x V1 stepper mount
 * 2 x pulley mount
 
 ![V1](./../images/V1.png)
