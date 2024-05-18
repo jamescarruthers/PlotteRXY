@@ -1,6 +1,6 @@
 ## End Cap Options
 
-For a standard build you want to use the 4 x plain end cap.
+For a standard build you want to use the 4 x plain end caps.
 
 For a 4WD build where you have motors at either end then choose either hole or XH. Depending on how you want to route your wires, you might want to use a mix of the plain and the end cap with XH or holes.
 
