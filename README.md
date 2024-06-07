@@ -1,4 +1,4 @@
-# PlotterXY
+# PlotteRXY
 A machine designed to be your second plotter after an AxiDraw or vintage plotter.
 
 # Why?
