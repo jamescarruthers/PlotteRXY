@@ -2,6 +2,7 @@
 
 Additional components required:
 
+* Nema 17 stepper motor - pick the slimmest and lightest you can find
 * 20t pulley - same used on the belt drive steppers
 * 4 x 605Z bearings - same as used on all other pulleys
 * 9mm 2GT belt - same as used for the drive belts
