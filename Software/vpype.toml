@@ -5,7 +5,7 @@
 # G90 - set to absolute positioning
 # G54 - set to G54 workspace
 # G0 - rapid move
-# G1 - controlled move
+# G01 - controlled move
 # G4 P1.0 - wait 1.0s
 # M3 - enable solenoid output
 # M5 - disable solenoid output
@@ -13,14 +13,40 @@
 # G01 Z0 F1000 - deactivate solenoid
 
 [gwrite]
-default_profile = "plotterxy"
+default_profile = "rxy_sol"
 
-[gwrite.plotterxy]
+[gwrite.rxy_sol]
 document_start = "G17 G21 G90 G54 M3\n"
-segment_first = "G00 X{x:.2f} Y{y:.2f}\nG01 Z0 F1000\nG4 P0.250\n"
+segment_first = "G00 X{x:.2f} Y{y:.2f}\nG01 Z0 F1000\nG4 P0.100\n"
 segment = "G01 X{x:.2f} Y{y:.2f} F5000\n"
 segment_last = "G01 X{x:.2f} Y{y:.2f} F5000\nG01 Z1 F1000\n"
 document_end = ""
 unit = "mm"
 invert_y = "True"
 
+[gwrite.rxy_step5]
+document_start = "G17 G21 G90 G54 M3\n"
+segment_first = "G00 X{x:.2f} Y{y:.2f}\nG01 Z0 F1000\nG4 P0.100\n"
+segment = "G01 X{x:.2f} Y{y:.2f} F5000\n"
+segment_last = "G01 X{x:.2f} Y{y:.2f} F5000\nG01 Z5 F5000\n"
+document_end = ""
+unit = "mm"
+invert_y = "True"
+
+[gwrite.rxy_step10]
+document_start = "G17 G21 G90 G54 M3\n"
+segment_first = "G00 X{x:.2f} Y{y:.2f}\nG01 Z0 F1000\nG4 P0.100\n"
+segment = "G01 X{x:.2f} Y{y:.2f} F5000\n"
+segment_last = "G01 X{x:.2f} Y{y:.2f} F5000\nG01 Z10 F5000\n"
+document_end = ""
+unit = "mm"
+invert_y = "True"
+
+[gwrite.rxy_step20]
+document_start = "G17 G21 G90 G54 M3\n"
+segment_first = "G00 X{x:.2f} Y{y:.2f}\nG01 Z0 F1000\nG4 P0.100\n"
+segment = "G01 X{x:.2f} Y{y:.2f} F5000\n"
+segment_last = "G01 X{x:.2f} Y{y:.2f} F5000\nG01 Z20 F5000\n"
+document_end = ""
+unit = "mm"
+invert_y = "True"
