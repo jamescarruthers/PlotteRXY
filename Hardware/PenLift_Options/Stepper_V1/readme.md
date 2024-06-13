@@ -11,7 +11,7 @@ Additional components required:
 * 1 x LWL7B 55mm guide rail - same as the solenoid lift
 * 1 x limit switch and associated wiring - same as used on the limit switches for the X and Y axis
 * 1 x M5 bolt for pen holder
-* 2 x 605 bearings for the pulley keeper
+* 2 x 605 bearings for the pulley keeper - this is the same as the rest of the plotter BUT without the flange
 * Various M2 and M3 screws to mount the arm, penholder, limit switch and stepper motor
 
 The pulley keeper should not be tight, it should just sit on the belt.
