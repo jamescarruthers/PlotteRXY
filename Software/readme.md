@@ -16,4 +16,4 @@ By default the profile used to output is for the solenoid pen lift. You can chan
 
 To use the stepper pen lift change the profile using -p and use rxy_step5, rxy_step10 or rxy_step20. The number represents the amount of lift in mm.
 
-"vpype -p rxy_step5 read input.svg gwrite output.gcode"
+"vpype read input.svg gwrite -p rxy_step5 output.gcode"
