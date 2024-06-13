@@ -17,3 +17,5 @@ Additional components required:
 The pulley keeper should not be tight, it should just sit on the belt.
 
 The belt should be installed with the adjustment pulley to the left, move the pulley to the right to loosen and enable "drop" mode.
+
+The screw tip is a very basic item to put on the end of the pen holder bolt - it's a clumsy solution at the moment.
