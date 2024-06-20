@@ -1,0 +1,134 @@
+board: MKS TinyBee V1.0 XXYYZ
+name: PlotterXY
+
+kinematics:
+  corexy:
+
+i2so:
+  bck_pin: gpio.25
+  data_pin: gpio.27
+  ws_pin: gpio.26
+
+spi:
+  miso_pin: gpio.19
+  mosi_pin: gpio.23
+  sck_pin: gpio.18
+
+sdcard:
+  cs_pin: gpio.5
+  # uses TH2 IO34 active low - MAKE SURE jumper J2 is set to SDDET!!!
+  card_detect_pin: gpio.34:low
+
+stepping:
+  engine: I2S_STATIC
+  idle_ms: 255
+  pulse_us: 4
+  dir_delay_us: 1
+  disable_delay_us: 2
+
+axes:
+  x:
+    steps_per_mm: 80
+    max_rate_mm_per_min: 24000
+    acceleration_mm_per_sec2: 2400
+    max_travel_mm: 840
+    soft_limits: true
+    homing:
+      cycle: 2
+      positive_direction: true
+      mpos_mm: 840
+      feed_mm_per_min: 600
+      seek_mm_per_min: 4000
+      settle_ms: 500
+      seek_scaler: 1.200
+      feed_scaler: 1.200
+
+    motor0:
+      limit_pos_pin: gpio.33:high:pu
+      hard_limits: true
+      pulloff_mm: 4.000
+      stepstick:
+        step_pin: I2SO.1
+        direction_pin: I2SO.2
+        disable_pin: I2SO.0
+
+    # use E0 driver for 2nd X axis motor
+    motor1:
+      hard_limits: true
+      pulloff_mm: 4.000
+      stepstick:
+        step_pin: I2SO.10
+        direction_pin: I2SO.11
+        disable_pin: I2SO.9
+
+  y:
+    steps_per_mm: 80
+    max_rate_mm_per_min: 24000
+    acceleration_mm_per_sec2: 2400
+    max_travel_mm: 590
+    soft_limits: true
+    homing:
+      cycle: 1
+      positive_direction: true
+      mpos_mm: 590
+      feed_mm_per_min: 600
+      seek_mm_per_min: 4000
+      settle_ms: 500
+      seek_scaler: 1.200
+      feed_scaler: 1.200
+
+    motor0:
+      limit_pos_pin: gpio.32:high:pu
+      hard_limits: false
+      pulloff_mm: 4.000
+      stepstick:
+        step_pin: I2SO.4
+        direction_pin: I2SO.5
+        disable_pin: I2SO.3
+
+    # use E1 driver for 2nd Y axis motor
+    motor1:
+      limit_neg_pin: NO_PIN
+      hard_limits: false
+      pulloff_mm: 4.000
+      stepstick:
+        step_pin: I2SO.13
+        direction_pin: I2SO.14
+        disable_pin: I2SO.12
+
+  z:
+    # this is setup for a 0.9deg stepper motor - use 80 for 1.8deg
+    steps_per_mm: 160
+    max_rate_mm_per_min: 64000
+    acceleration_mm_per_sec2: 6400
+    max_travel_mm: 28
+    soft_limits: true
+    homing:
+      cycle: 3
+      positive_direction: true
+      mpos_mm: 28
+      feed_mm_per_min: 300.000
+      seek_mm_per_min: 500.000
+      settle_ms: 500
+      seek_scaler: 1.200
+      feed_scaler: 1.200
+
+    motor0:
+      limit_pos_pin: gpio.22:high:pu
+      hard_limits: true
+      pulloff_mm: 2.000
+      stepstick:
+        step_pin: I2SO.7
+        direction_pin: I2SO.8:low
+        disable_pin: I2SO.6
+
+
+coolant:
+  # Heated Bed Terminal Block
+  flood_pin: i2so.16
+  # HE0 Terminal Block
+  mist_pin: i2so.17
+  delay_ms: 0
+
+start:
+  must_home: true
