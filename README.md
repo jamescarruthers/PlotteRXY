@@ -26,7 +26,7 @@ The rest of the parts you'll need are here; https://docs.google.com/spreadsheets
 
 There is a build guide in the hardware folder.
 
-The firmware folder contains the machine configuration for use with Grbl_ESP32.
+The firmware folder contains the machine configuration for use with FluidNC.
 
 The software folder contains a configuration file for use with vpype and vpype-gcode.
 
