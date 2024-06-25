@@ -15,8 +15,8 @@ spi:
   sck_pin: gpio.18
 
 uart2:
-  txd_pin: gpio.22
-  rxd_pin: gpio.21
+  txd_pin: gpio.17
+  rxd_pin: gpio.16
   baud: 115200
   mode: 8N1
 
@@ -53,7 +53,21 @@ axes:
       limit_pos_pin: gpio.33:high:pu
       hard_limits: true
       pulloff_mm: 4.000
-      stepstick:
+      tmc_2209:
+        uart_num: 2
+        addr: 0
+        r_sense_ohms: 0.110
+        run_amps: 1.200
+        hold_amps: 0.800
+        microsteps: 4
+        stallguard: 0
+        stallguard_debug: false
+        toff_disable: 0
+        toff_stealthchop: 5
+        toff_coolstep: 3
+        run_mode: StealthChop
+        homing_mode: StealthChop
+        use_enable: true
         step_pin: I2SO.1
         direction_pin: I2SO.2
         disable_pin: I2SO.0
@@ -62,7 +76,21 @@ axes:
     motor1:
       hard_limits: true
       pulloff_mm: 4.000
-      stepstick:
+      tmc_2209:
+        uart_num: 2
+        addr: 0
+        r_sense_ohms: 0.110
+        run_amps: 1.200
+        hold_amps: 0.800
+        microsteps: 4
+        stallguard: 0
+        stallguard_debug: false
+        toff_disable: 0
+        toff_stealthchop: 5
+        toff_coolstep: 3
+        run_mode: StealthChop
+        homing_mode: StealthChop
+        use_enable: true
         step_pin: I2SO.10
         direction_pin: I2SO.11
         disable_pin: I2SO.9
@@ -87,7 +115,21 @@ axes:
       limit_pos_pin: gpio.32:high:pu
       hard_limits: false
       pulloff_mm: 4.000
-      stepstick:
+      tmc_2209:
+        uart_num: 2
+        addr: 1
+        r_sense_ohms: 0.110
+        run_amps: 1.200
+        hold_amps: 0.800
+        microsteps: 4
+        stallguard: 0
+        stallguard_debug: false
+        toff_disable: 0
+        toff_stealthchop: 5
+        toff_coolstep: 3
+        run_mode: StealthChop
+        homing_mode: StealthChop
+        use_enable: true
         step_pin: I2SO.4
         direction_pin: I2SO.5
         disable_pin: I2SO.3
@@ -97,7 +139,21 @@ axes:
       limit_neg_pin: NO_PIN
       hard_limits: false
       pulloff_mm: 4.000
-      stepstick:
+      tmc_2209:
+        uart_num: 2
+        addr: 1
+        r_sense_ohms: 0.110
+        run_amps: 1.200
+        hold_amps: 0.800
+        microsteps: 4
+        stallguard: 0
+        stallguard_debug: false
+        toff_disable: 0
+        toff_stealthchop: 5
+        toff_coolstep: 3
+        run_mode: StealthChop
+        homing_mode: StealthChop
+        use_enable: true
         step_pin: I2SO.13
         direction_pin: I2SO.14
         disable_pin: I2SO.12
@@ -123,10 +179,29 @@ axes:
       limit_pos_pin: gpio.22:high:pu
       hard_limits: true
       pulloff_mm: 2.000
-      stepstick:
+      # stepstick:
+      #   step_pin: I2SO.7
+      #   direction_pin: I2SO.8:low
+      #   disable_pin: I2SO.6
+      tmc_2209:
+        uart_num: 2
+        addr: 2
+        r_sense_ohms: 0.110
+        run_amps: 1.200
+        hold_amps: 0.800
+        microsteps: 4
+        stallguard: 0
+        stallguard_debug: false
+        toff_disable: 0
+        toff_stealthchop: 5
+        toff_coolstep: 3
+        run_mode: StealthChop
+        homing_mode: StealthChop
+        use_enable: true
         step_pin: I2SO.7
         direction_pin: I2SO.8:low
         disable_pin: I2SO.6
+
 
 
 coolant:
