@@ -32,9 +32,20 @@ stepping:
   dir_delay_us: 1
   disable_delay_us: 2
 
+# 20t pulley
+# steps per mm/microsteps   80/16   40/8    20/4    10/2    5/1
+# resolution in mm          0.0125  0.025   0.050   0.100   0.200
+
+# 16t pulley
+# steps per mm/microsteps   100/16  50/8    25/4    12.5/2  6.25/1
+# resolution in mm          0.010   0.020   0.050   0.080   0.160
+
+# 1/4 microsteps gives best torque for a wide range of speeds
+
+
 axes:
   x:
-    steps_per_mm: 80
+    steps_per_mm: 20
     max_rate_mm_per_min: 24000
     acceleration_mm_per_sec2: 2400
     max_travel_mm: 840
@@ -96,7 +107,7 @@ axes:
         disable_pin: I2SO.9
 
   y:
-    steps_per_mm: 80
+    steps_per_mm: 20
     max_rate_mm_per_min: 24000
     acceleration_mm_per_sec2: 2400
     max_travel_mm: 590
@@ -143,8 +154,8 @@ axes:
         uart_num: 2
         addr: 1
         r_sense_ohms: 0.110
-        run_amps: 1.200
-        hold_amps: 0.800
+        run_amps: 0.8
+        hold_amps: 0.6
         microsteps: 4
         stallguard: 0
         stallguard_debug: false
@@ -159,8 +170,8 @@ axes:
         disable_pin: I2SO.12
 
   z:
-    # this is setup for a 0.9deg stepper motor - use 80 for 1.8deg
-    steps_per_mm: 80
+    # this is setup for a 0.9deg stepper motor - use 20 for 1.8deg
+    steps_per_mm: 40
     max_rate_mm_per_min: 64000
     acceleration_mm_per_sec2: 6400
     max_travel_mm: 28
