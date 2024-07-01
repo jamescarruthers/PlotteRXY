@@ -31,11 +31,12 @@ Note that there is no upgrade path from V2 to 4WD. If you want 4WD use V1. There
 ## V2 with central drive
 
 * 1 x central drive
-* 4 x V2 pulley mount
+* 2 x V1 pulley mount
+* 2 x V2 pulley mount
 
 ![V2 central drive](./../images/Central.png)
 
-This configuration mounts the two steppers together, place it in the middle of the rail.
+This configuration mounts the two steppers together.
 
 
 ## 4-wheel-drive tensioning procedure
