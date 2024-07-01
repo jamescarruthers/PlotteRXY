@@ -5,7 +5,7 @@ V2 is suggested for new builds as it's a much neater layout, allowing one end of
 ## V1 Original
 
 * 2 x V1 stepper mount
-* 2 x pulley mount
+* 2 x V1 pulley mount
 
 ![V1](./../images/V1.png)
 
@@ -16,11 +16,12 @@ V2 is suggested for new builds as it's a much neater layout, allowing one end of
 
 ![V1AWD](./../images/4WD.png)
 
+! Note, V2 is currently untested - use at your own risk
 
 ## V2
 
 * 2 x V2 stepper mount
-* 2 x pulley mount
+* 2 x V2 pulley mount
 
 ![V2](./../images/V2.png)
 
@@ -28,7 +29,7 @@ V2 is suggested for new builds as it's a much neater layout, allowing one end of
 ## V2 with central drive
 
 * 1 x central drive
-* 4 x pulley mount
+* 4 x V2 pulley mount
 
 ![V2 central drive](./../images/Central.png)
 
