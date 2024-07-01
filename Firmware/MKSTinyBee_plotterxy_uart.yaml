@@ -154,8 +154,8 @@ axes:
         uart_num: 2
         addr: 1
         r_sense_ohms: 0.110
-        run_amps: 0.8
-        hold_amps: 0.6
+        run_amps: 1.2
+        hold_amps: 0.8
         microsteps: 4
         stallguard: 0
         stallguard_debug: false
