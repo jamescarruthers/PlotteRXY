@@ -4,11 +4,11 @@
 
 Let's say you want to build an A2 machine; 600 x 420 (rounded up)
 
-X extrusion = width + 240 = 600 + 240 = 840mm
+X extrusion = width + 260 = 600 + 260 = 860mm
 
-Y extrusion = length + 180 = 420 + 180 = 600mm
+Y extrusion = length + 200 = 420 + 200 = 620mm
 
-Y axis = Y extrusion - 13 = 587mm
+Y axis = Y extrusion - 13 = 607mm
 
 These numbers have a bit of excess to allow a bit of movement around the outside of the plot area.
 
