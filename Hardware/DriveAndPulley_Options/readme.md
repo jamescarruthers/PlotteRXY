@@ -2,7 +2,7 @@ There are a few different options for drive and pulley configurations depending 
 
 V2 is suggested for new builds as it's a much neater layout, allowing one end of the plotter to be free of belt and any kind of wiring. It also drives the middle of the belt, rather than more towards one end.
 
-Note that there is no "upgrade path" from V2 to 4WD. If you want 4WD use the V1 mounts. There's nothing wrong with V1, it just drove the "wrong" part of the belt - which happens to be the right part for 4WD. If you _really_ want to go 4WD with V2 then you can use the V1 stepper mounts.
+Note that there is no "upgrade path" from V2 to 4WD. If you want 4WD use the V1 mounts. There's nothing wrong with V1, it just drove the "wrong" part of the belt - which happens to be the right part for 4WD. If you _really_ want to go 4WD with V2 then you could use the V1 stepper mounts.
 
 ## V1 Original
 
