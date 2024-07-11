@@ -1,6 +1,6 @@
 # Stepper pen lift
 
-![Stepper pen lift](./photo.jpg)
+![Stepper pen lift](./photo.jpeg)
 
 Additional components required:
 
