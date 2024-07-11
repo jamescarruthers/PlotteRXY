@@ -1,5 +1,7 @@
 # Stepper pen lift
 
+![Stepper pen lift](./photo.jpg)
+
 Additional components required:
 
 * Nema 17 stepper motor - pick the slimmest and lightest you can find
