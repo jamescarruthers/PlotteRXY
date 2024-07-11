@@ -2,6 +2,8 @@
 
 ![Stepper pen lift](./photo.jpeg)
 
+This pen lift allows gravity and driven functions by adjusting a pulley.
+
 Additional components required:
 
 * Nema 17 stepper motor - pick the slimmest and lightest you can find
