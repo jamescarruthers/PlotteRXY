@@ -3,8 +3,10 @@
 import os
 import time
 import requests
-import telnetlib
 import argparse
+
+import asyncio
+import telnetlib3
 
 def upload_file(file_path, url):
     try:
@@ -19,7 +21,79 @@ def upload_file(file_path, url):
     except Exception as e:
         print(f"An error occurred: {e}")
 
+class TelnetClient:
+    def __init__(self, host, port):
+        self.host = host
+        self.port = port
+        self.reader = None
+        self.writer = None
+
+    async def connect(self):
+        self.reader, self.writer = await telnetlib3.open_connection(self.host, self.port)
+        print(f"Connected to {self.host}:{self.port}\n")
+
+    async def send_command_and_wait_for_reply(self, command, expected_reply, timeout=30):
+        if self.writer is None or self.reader is None:
+            raise Exception("Not connected to the server.")
+
+        self.writer.write(command + '\n')
+        await self.writer.drain()
+
+        response = ""
+        try:
+            while True:
+                data = await asyncio.wait_for(self.reader.read(1024), timeout)
+                if data:
+                    print(data, end="") # Print each chunk as it is received
+                    response += data
+                    if expected_reply in response:
+                        break
+                else:
+                    break
+        except asyncio.TimeoutError:
+            print("\nTimed out waiting for the expected reply.")
+        
+        return response
+
+    async def close(self):
+        if self.writer is not None:
+            self.writer.write_eof()  # Properly send EOF
+            await self.writer.drain()
+            self.writer.close()
+            self.reader = None
+            self.writer = None
+            print(f"\nDisconnected from {self.host}:{self.port}")
+
+# Example usage
+async def main():
+    host = 'fluidnc.local'
+    port = 23
+    client = TelnetClient(host, port)
+
+    await client.connect()
+
+    try:
+
+        if not args.nohome or args.home:
+            print("Homing...")
+            await client.send_command_and_wait_for_reply("$H", "ok")
+
+        if args.file_path != None:
+            print("Reporting on...")
+            await client.send_command_and_wait_for_reply("$Report/Interval=1000", "ok")
+
+            print("Running job...")
+            await client.send_command_and_wait_for_reply("$SD/Run=/" + os.path.basename(file_path) , "succeeded", 5)
+
+        if args.md:
+            print("Disabling motors...")
+            await client.send_command_and_wait_for_reply("$MD", "ok")
+
+    finally:
+        await client.close()
+
 if __name__ == "__main__":
+    
     parser = argparse.ArgumentParser(description="Upload a file and run it.")
     parser.add_argument("file_path", nargs='?', help="Path to the file to upload")
     parser.add_argument("--noupload", action="store_true", help="Choose not to upload the file (if it has already been uploaded)")
@@ -33,74 +107,6 @@ if __name__ == "__main__":
     url = "http://fluidnc.local/upload"
     
     if not args.noupload and args.file_path != None:
-        upload_file(file_path, url)
-
-    tn = telnetlib.Telnet("fluidnc.local", 23, 5)
+        upload_file(file_path, url)    
     
-    if not args.nohome or args.home:
-        print("Homing... ")
-        try:
-            tn.write("$H".encode('ascii') + b"\n")
-            # response = tn.read_until("ok".encode('ascii')).decode('ascii')
-            # print(response)
-            while True:
-                response = tn.expect([b'\n'], 30)
-                if response:
-                    reply = response[2]
-                    if reply == b"ok\r\n":
-                        print(reply.decode('ascii'), end="")
-                        break
-                    print(reply.decode('ascii'), end="")
-                else:
-                    time.sleep(1)  # Sleep briefly to avoid tight loop
-        except EOFError:
-            print("\nTelnet connection closed by server")
-        except Exception as e:
-            print(f"An error occurred while connecting to Telnet: {e}")
-    
-    if args.file_path != None:
-    
-        print("Turn on reporting...")
-        tn.write("$Report/Interval=1000".encode('ascii') + b"\n")
-        
-        print("Running job...")
-        command = "$SD/Run=/" + os.path.basename(file_path)
-        
-        try:
-            tn.write(command.encode('ascii') + b"\n")
-            # response = tn.read_until("ok".encode('ascii')).decode('ascii')
-            # print(response)
-            while True:
-                response = tn.expect([b'\n'], 30)
-                if response:
-                    reply = response[2]
-                    if reply == b"ok\r\n":
-                        print(reply.decode('ascii'), end="")
-                        break
-                    print(reply.decode('ascii'), end="")
-                else:
-                    time.sleep(1)  # Sleep briefly to avoid tight loop
-            
-            print("Starting...")
-            
-            while True:
-                response = tn.expect([b'\n'], 30)
-                if response:
-                    reply = response[2]
-                    if b"MSG" in reply:
-                        print(reply.decode('ascii'), end="")
-                        break
-                    print(reply.decode('ascii'), end="")
-                else:
-                    time.sleep(1)  # Sleep briefly to avoid tight loop
-
-        except EOFError:
-            print("\nTelnet connection closed by server")
-        except Exception as e:
-            print(f"An error occurred while connecting to Telnet: {e}")
-
-    if args.md:
-        command = "$MD"
-        tn.write(command.encode('ascii') + b"\n")
-
-    tn.close()
+    asyncio.run(main())
